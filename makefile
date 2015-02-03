@@ -5,6 +5,8 @@ pq_part_file := $(pq_part_name).tar.gz
 
 pq_asn1c_configuration_flags += --prefix=$(part_dir)
 
+PQ_BIN += asn1c
+
 build-stamp: stage-stamp
 	$(MAKE) -C $(pq_part_name) mkinstalldirs=$(part_dir)
 	$(MAKE) -C $(pq_part_name) mkinstalldirs=$(part_dir) DESTDIR=$(stage_dir) install
