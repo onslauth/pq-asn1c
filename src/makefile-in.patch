@@ -1,0 +1,11 @@
+--- asn1c-0.9.26/skeletons/Makefile.in	2014-09-10 21:08:07.000000000 +0200
++++ asn1c-0.9.26-new/skeletons/Makefile.in	2015-02-03 14:42:17.580474893 +0200
+@@ -310,7 +310,7 @@
+ 		${srcdir}/*.[ch]		\
+ 		${srcdir}/file-dependencies
+ 
+-smodsdir = $(pkgdata)
++smodsdir = $(pkgdatadir)
+ nobase_dist_smods_DATA = \
+ 	standard-modules/README  \
+ 	standard-modules/ASN1-Object-Identifier-Module.asn1 \

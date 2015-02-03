@@ -16,7 +16,8 @@ configure-stamp: patch-stamp
 	cd $(pq_part_name) && ./configure $(pq_asn1c_configuration_flags)
 	touch $@
 
-patch-stamp: unpack-stamp
+patch-stamp: unpack-stamp makefile-in.patch
+	patch -p0 < $(source_dir)/makefile-in.patch
 	touch $@
 
 unpack-stamp: $(pq_part_file)
