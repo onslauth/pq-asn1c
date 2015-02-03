@@ -5,7 +5,7 @@ pq_part_file := $(pq_part_name).tar.gz
 
 pq_asn1c_configuration_flags += --prefix=$(part_dir)
 
-PQ_BIN += asn1c
+PQ_BIN += asn1c crfc2asn1.pl enber unber
 
 build-stamp: stage-stamp
 	$(MAKE) -C $(pq_part_name) mkinstalldirs=$(part_dir)
